@@ -9,7 +9,7 @@ variable tag_environment{
 
 
 variable tag_name{
-    description = "Name for application"
+    description = "Name for Application"
     type = string
     validation{
             condition = contains(["quixa","ago"], var.tag_name)
