@@ -8,7 +8,11 @@ variable tag_environment{
     }
 
 
-
-
-
-
+variable tag_name{
+    description = "Name for Application"
+    type = string
+    validation{
+            condition = contains(["quixa","ago"], var.tag_name)
+            error_message = "The environment must be one of 'quixa', 'ago'."
+        }
+    }
