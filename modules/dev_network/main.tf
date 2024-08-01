@@ -1,5 +1,5 @@
-resource "azurerm_resource_group" "example" {
-  name     = "example"
+resource "azurerm_resource_group" "dev_rg" {
+  name     = "dev_resgrp"
   location = "Central India"
 
   tags = {
