@@ -12,7 +12,7 @@ variable tag_name{
     description = "Name for application"
     type = string
     validation{
-            condition = contains(["quixa","ago"],var.tag_name)
+            condition = contains(["quixa","ago"], var.tag_name)
             error_message = "The environment must be one of 'quixa', 'ago'."
         }
     }
