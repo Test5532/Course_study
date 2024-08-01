@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "dev_rg" {
   location = "Central India"
 
   tags = {
-    Application = var.tag_name
-    Name = var.tag_environment
+    Application = "quixa"
+    Name = "staging"
   }
 }
